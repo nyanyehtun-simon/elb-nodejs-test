@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-app.get('/', (req, res) => {
+app.get('/abc', (req, res) => {
   res.send('flowers smell nice');
 });
 
